@@ -1,0 +1,158 @@
+/* ===========================
+   Global
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Montenegrin Gothic One", sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    width:100%;
+    background:#2563eb;
+    padding:20px 50px;
+}
+
+.header-container{
+    max-width:1200px;
+    height:200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    font-family: "Montenegrin Gothic One", sans-serif;
+}
+
+header h1{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:white;
+    font-size:3rem;
+}
+
+header h1 img{
+    width:130px;
+    height:140px;
+    border-radius:50%;
+}
+
+nav{
+    display:flex;
+    gap:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#5b67c9;
+    padding:10px 20px;
+    border-radius:5px;
+    font-weight:bold;
+    font-family: "Montenegrin Gothic One", sans-serif;
+}
+
+nav a:hover{
+    background:#444;
+}
+
+/* ===========================
+   Section
+=========================== */
+
+.section{
+    max-width:1200px;
+    margin:40px auto;
+    background:aliceblue;
+    padding:30px;
+    border-radius:10px;
+}
+
+.contact h1{
+    color:#2563eb;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.contact p{
+    text-align:center;
+    font-size:18px;
+    color:rgb(231, 9, 34);
+    font-weight:bold;
+    margin-bottom:40px;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.formClass{
+    max-width:500px;
+    margin:auto;
+}
+
+.formClass div{
+    display:flex;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+.formClass label{
+    color: rgb(116, 114, 206);
+    width:140px;
+    font-weight:bold;
+}
+
+.formClass input,
+.formClass textarea{
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:15px;
+}
+
+.formClass textarea{
+    min-height:100px;
+    resize:vertical;
+}
+
+.formClass input[type="submit"]{
+    width:70px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:20px;
+    font-size: 20px;
+}
+
+.formClass input[type="submit"]:hover{
+    background:rgb(200,175,175);
+    color:navy;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    text-align:center;
+    font-style:italic;
+    font-weight:bold;
+    color:rgb(231, 9, 34);
+    padding:10px;
+    margin-bottom:30px;
+}

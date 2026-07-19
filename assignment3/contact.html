@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="A.png">
+    <title>Personal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <header> 
+        <div class="header-container">
+            <h1>
+           <img src="./images/archu.png" alt="Archana image">  
+            Personal Portfolio </h1>    
+            <nav>
+                <a href="index.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="#contactMe">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="section"> 
+        <div class="contact">      
+            <h1> Contact Me </h2>
+            <p> Thank you for visiting my portfolio. If you have any queries please feel free
+                to contact me! 
+            </p>
+            <form  class="formClass">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" pattern="^[A-Z][a-zA-Z]{2,15}$" required
+                            title="Name should start with a capital letter, contain only alphabets, and have 3 to 16 letters only">
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label> 
+                        <input type="text" id="lname" name="lname" minlength="2" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"   required
+                        title="Email must contain a valid format like name@example.com">
+                    </div>
+                    <div>
+                        <label for="phone">Mobile </label>
+                        <input type="tel" id="phone" name="phone" pattern="^[6-9][0-9]{9}$" required
+                        title="Please enter 10 digits Indian mobile number.">
+                    </div>
+                    <div>
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="msg" minlength="10" title="Enter minimum 10 characters" required></textarea>
+                    </div>                         
+                      <div><input type="submit"  name="submit">  </div> 
+            </form>
+        </div>   
+        <footer>
+            <p>© 2026 Archana Reddy | Software Developer Portfolio</p>
+        </footer> 
+    </section>
+</body>
+</html>

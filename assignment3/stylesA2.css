@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Header */
+header {
+    width: 100%;
+    background-color: #2563eb;
+    padding: 20px 50px;
+}
+.header-container {
+    max-width: 1200px;
+    height: 200px;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between;    
+    align-items: center;
+    flex-wrap: wrap;          
+}
+/* title */
+header h1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;    
+    color:white;
+    font-size:3rem;
+}
+header h1 img{
+    width: 130px;
+    height: 140px;
+    border-radius: 50%;
+}
+/* Navigation */
+nav {
+    display: flex;
+    gap: 15px;  
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #5b67c9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: #444;
+}
+/* Main section */
+.section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+/*Welcome Message*/
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;    
+}
+.welcome h1{
+    color: #2563eb;
+    margin-bottom: none;
+}
+
+/* Heading */
+.section h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 40px;
+}
+.section h1 p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+/*About Me */
+.section h2, .section h3 {
+    background-color:cornflowerblue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.div-about {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: rgb(116, 173, 199);
+    font-weight: bold;
+}
+/* Skills */
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color:#dfdfe4;
+    color: rgb(108, 172, 229);
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 8px;
+} 
+/* Projects Css Starts from Here */
+.proj {
+    margin-bottom: 30px;
+}
+#proj  {
+    color: navy;
+}
+section .proj h2 {
+    background-color: rgb(187, 185, 185);
+    color: navy;
+    margin-bottom: 30px;
+
+}
+.proj span {
+    color: rgb(155, 6, 157);
+    font-weight: bold;
+    font-size: 18px;
+}
+.proj p {
+    color: navy;
+    font-weight: lighter;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode';    
+}
+
+.proj img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Contact CSS */
+.contact h1 {
+    color: #2563eb;
+    text-align: center;
+    margin-top: 30px;
+}
+.contact P {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: cornflowerblue;
+    margin-bottom: 40px;
+}
+/*form styling */
+.formClass {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.formClass div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.formClass label { 
+    width: 140px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.formClass input, .formClass textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.formClass textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+.formClass input[type="submit"]{
+    width: 150px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.formClass input[type="submit"]:hover {
+    background-color: rgb(200, 175, 175);
+    color: navy;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color:  #2563eb;    
+    padding: 10px;
+    margin-bottom: 30px;
+}
+

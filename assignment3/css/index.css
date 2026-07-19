@@ -1,0 +1,155 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    width:100%;
+    background:#2563eb;
+    padding:20px 50px;
+}
+
+.header-container{
+    max-width:100%;
+    height:200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    font-family: "Montenegrin Gothic One", sans-serif;
+}
+
+header h1{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:white;
+    font-size:3rem;
+}
+
+header h1 img{
+    width:130px;
+    height:140px;
+    border-radius:50%;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+nav{
+    display:flex;
+    gap:15px;
+}
+
+nav a{
+    font-family: "Montenegrin Gothic One", sans-serif;
+    text-decoration:none;
+    color:white;
+    background:#5b67c9;
+    padding:10px 20px;
+    border-radius:5px;
+    font-size: 20px;
+    font-weight:bold;
+    transition:all .3s ease;
+}
+
+nav a:hover{
+    background:#444;
+    transform:translateY(-4px);
+}
+
+/* ===========================
+   Main Section
+=========================== */
+
+.section{
+    max-width:1200px;
+    margin:40px auto;
+    padding:30px;
+    background:aliceblue;
+    border-radius:10px;
+}
+
+.welcome{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.welcome h1{
+    color:#121153;
+}
+#about, #skills  {
+    font-family: "Montenegrin Gothic One", sans-serif;
+    font-size: 25px;
+}
+
+.section h2,
+.section h3{
+    background:cornflowerblue;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    margin-bottom:15px;
+}
+
+.div-about{
+    text-align:justify;
+    line-height:1.8;
+    color:#121153;
+    font-weight:bold;
+    margin-bottom:30px;
+    font-size: 20px;
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+#skills li {
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+
+/* ===========================
+   Skills
+=========================== */
+
+ul{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    background:#dfdfe4;
+    padding:30px;
+    border-radius:8px;
+}
+
+ul li{
+    color:#121153;
+    font-weight:bold;
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    text-align:center;
+    font-style:italic;
+    font-weight:bold;
+    color:#121153;
+    padding:10px;
+    margin-bottom:30px;
+}

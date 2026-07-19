@@ -1,0 +1,152 @@
+/* ===========================
+   Global
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Italianno", cursive;;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    width:100%;
+    background:#2563eb;
+    padding:20px 50px;
+}
+
+.header-container{
+    max-width:1200px;
+    height:200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+header h1{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:white;
+    font-size:5rem;
+}
+
+header h1 img{
+    width:130px;
+    height:140px;
+    border-radius:50%;
+}
+
+nav{
+    display:flex;
+    gap:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#5b67c9;
+    padding:10px 20px;
+    border-radius:5px;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#444;
+}
+
+/* ===========================
+   Section
+=========================== */
+
+.section{
+    max-width:1200px;
+    margin:40px auto;
+    background:aliceblue;
+    padding:30px;
+    border-radius:10px;
+}
+
+#proj{
+    padding-left: 5px;
+    text-align:center;
+    font-size: 50px;
+    color:navy;
+    margin-bottom:40px;
+    animation: fadeDown 1s ease;
+}
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.proj{    
+    margin-bottom:40px;
+    font-family: "Montenegrin Gothic One", sans-serif;
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+.proj:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #00000026;
+}
+
+.proj h2{
+    font-size: 40px;
+    background:#bbb9b9;
+    color:navy;
+    padding:10px;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+.proj span{
+    color:rgb(155,6,157);
+    font-weight:bold;
+    font-size:35px;
+}
+
+.proj p, .proj ul{
+    font-size: 34px;
+    color:navy;
+}
+
+.proj img{
+    width:400px;
+    height:300px;
+    display:block;
+    margin:30px auto;
+    transition: transform, 4s ease;
+}
+.proj img:hover {
+    transform: scale(1.05);
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    text-align:center;
+    font-style:italic;
+    font-weight:bold;
+    color:#2563eb;
+    padding:10px;
+    margin-bottom:30px;
+}

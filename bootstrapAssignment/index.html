@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bootstrap - Assignment5</title>
+    <!-- Bootstrap CDN style link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS style link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="fixed-top">
+      <!-- Navbar from Bootstrap without search element -->
+      <nav class="navbar navbar-expand-lg bg-primary-subtle shadow">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="./resources/A.png"
+              class="logo me-4"
+              alt="logo"
+              style="width: 50px"
+            />
+            <span>Archana</span></a
+          >
+          <!-- Hamburger button  -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto me-1">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Main Section -->
+    <div class="container">
+      <div class="row align-items-center py-5">
+        <h1 class="headingh1 text-secondary text-center py-5">
+          Personal Portfolio
+        </h1>
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <h2 id="about">About Me</h2>
+          <p>
+            Hello! I'm <strong>Archana</strong>, a passionate
+            <strong>Salesforce Developer</strong> with a strong foundation in
+            <strong>web development</strong> and modern front-end technologies.
+            I enjoy building scalable, user-friendly applications that solve
+            real business problems and deliver meaningful user experiences
+          </p>
+          <p>
+            I have hands-on experience developing Salesforce solutions using
+            <strong>Apex, Lightning Web Components (LWC), SOQL, Flows,</strong>
+            and automation tools. Alongside Salesforce, I work with<strong>
+              HTML5, CSS3, Bootstrap, and JavaScript</strong
+            >
+            to create responsive and visually appealing web applications.
+          </p>
+          <p>
+            I believe that great software is built through continuous learning,
+            attention to detail, and clean, maintainable code. I enjoy exploring
+            new technologies, improving my technical skills, and turning ideas
+            into practical solutions.
+          </p>
+          <!-- Skills with modal -->
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            My Skills
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-primary-subtle">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    SKILLS
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="modal-body">
+                  <h6 class="header h6 bg-primary-subtle">Salesforce</h6>
+
+                  <span class="badge">Administrator</span>
+                  <span class="badge">Flows</span>
+                  <span class="badge">SOQL</span>
+                  <span class="badge">OSL</span>
+                  <span class="badge">Apex Code</span>
+                  <span class="badge">LWC</span>
+                  <span class="badge">Integration</span>
+                  <span class="badge">Google Integration</span>
+                  <span class="badge">DevOps</span>
+                  <span class="badge">Agentforce</span>
+                  <hr />
+
+                  <h6 class="header h6 bg-primary-subtle">Frontend</h6>
+                  <span class="badge m-1">HTML5</span>
+                  <span class="badge m-1">CSS3</span>
+                  <span class="badge m-1">Bootstrap</span>
+                  <span class="badge m-1">JavaScript</span>
+                  <hr />
+
+                  <h6 class="header h6 bg-primary-subtle">Backend & Tools</h6>
+                  <span class="badge m-1">JAVA</span>
+                  <span class="badge m-1">MYSQL</span>
+                  <span class="badge m-1">GIT</span>
+                  <span class="badge m-1">VS CODE</span>
+
+                  <hr />
+
+                  <h6 class="header h6 bg-primary-subtle">Database Skills</h6>
+
+                  <span class="badge m-1">MySQL</span>
+                  <span class="badge m-1">SQL</span>
+                  <span class="badge m-1">CRUD Operations</span>
+                  <span class="badge m-1">Joins</span>
+                  <span class="badge m-1">Aggregate Functions</span>
+                  <span class="badge m-1">Subqueries</span>
+                  <span class="badge m-1">Views</span>
+                  <span class="badge m-1">Normalization</span>
+                  <span class="badge m-1">Data Import & Export</span>
+                </div>
+
+                <div class="modal-footer bg-primary-subtle">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- grid-right : image -->
+        </div>
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <img src="./resources/img.jpg" alt="hero-img" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary-subtle text-light py-4 m-auto">
+      <!-- Copyright Text -->
+      <p class="text-secondary-dark text-center small mt-0">
+        &copy; 2026 Archana Vada. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Bootstrap CDN script link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>

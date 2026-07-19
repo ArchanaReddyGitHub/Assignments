@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url(../resources/colors.avif);
+  background-repeat: repeat;
+  background-size: 1000px 1000px;
+  background-position: top left;
+  opacity: 0.1;
+  z-index: -1;
+}
+.navbar {
+  position: relative;
+  background-color: bisque;
+  padding: 12px 0;
+}
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.navbar-nav .nav-item {
+  margin-left: 25px;
+}
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  background-color: #7dcfe3;
+  color: white;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 10);
+}
+
+.headingh1 {
+  margin-top: 30px;
+  padding-top: 10px;
+}
+
+#about {
+  margin: 30px 0;
+  text-align: center;
+  color: #0d6efd;
+  font-weight: bold;
+}
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: rgb(11, 19, 92);
+}
+.modal-header {
+  background: #07a9bb;
+  color: white;
+  align-content: center;
+}
+.badge-text {
+  background: aliceblue;
+  font-weight: bold;
+}
+.modal-body h6 {
+  color: navy;
+  font-weight: bold;
+}
+.badge {
+  max-width: auto;
+  color: black;
+}
+#staticBackdropLabel {
+  font-weight: bold;
+  color: navy;
+  text-align: center;
+}
+.modal-footer {
+  justify-content: center;
+}
+.modal-footer btn {
+  color: navy;
+}
+.btn:hover {
+  background-color: lightblue;
+  color: black;
+  font-weight: bold;
+}
+
+.text-center img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 0;
+  display: block;
+  margin: 0 auto;
+}
+.card {
+  background-color: lightgray;
+}
+/* Contact CSS */
+.text-muted {
+  color: navy !important;
+  font-family: "Playwrite NZ Guides", cursive;
+}
+.contact-card {
+  transition:
+    all,
+    0.4s ease;
+}
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+.fw-bold {
+  color: navy;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  background-color: gray !important;
+  border: none;
+  opacity: 0.4;
+}
+.btn {
+  background-color: navy;
+  color: white;
+}
+.btn:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+  .headingh1 {
+    font-size: 2rem;
+    padding: 20px 0;
+  }
+  p {
+    font: size 1rem;
+    text-align: left;
+  }
+  .row-align-items-center {
+    text-align: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    background: #fff;
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+  }
+  .navbar-nav {
+    margin: 0 !important;
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 0;
+  }
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+  .navbar-nav .nav-link:hover {
+    background: #0d6efd;
+    color: white;
+  }
+}

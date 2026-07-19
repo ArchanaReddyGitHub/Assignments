@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bootstrap - Assignment5</title>
+    <!-- Bootstrap CDN style link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Google fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Italianno&family=Playwrite+NZ+Guides&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS style link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="fixed-top">
+      <!-- Navbar from Bootstrap without search element -->
+      <nav class="navbar navbar-expand-lg bg-primary-subtle shadow">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="./resources/A.png"
+              class="logo me-4"
+              alt="logo"
+              style="width: 50px"
+            />
+            <span>Archana</span></a
+          >
+          <!-- Hamburger button  -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto me-2">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container py-5 pt-5 mt-5" id="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+          <div class="card contact-card border-0 rounded-4 p-3 shadow-lg">
+            <div class="text-center mb-4">
+              <h2 class="fw-bold pt-0">Contact Me</h2>
+              <p class="text-muted text-center">
+                Thank you for visiting my portfolio. If you have any queries,
+                please feel free to contact me!
+              </p>
+            </div>
+
+            <form>
+              <div class="row">
+                <!-- First Name -->
+                <div class="col-md-12 mb-3">
+                  <div class="row align-items-center">
+                    <label for="fname" class="col-sm-3 col-form-label fw-bold">
+                      First Name
+                    </label>
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="fname"
+                        id="fname"
+                        pattern="^[A-Z][a-zA-Z]{2,15}$"
+                        required
+                        title="Name should start with a capital letter, contains only alphabets, and have 3 to 15 letters only "
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Last Name -->
+                <div class="col-md-12 mb-3">
+                  <div class="row align-items-center">
+                    <label for="lname" class="col-sm-3 col-form-label fw-bold">
+                      Last Name
+                    </label>
+                    <div class="col-sm-8">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="lname"
+                        id="lname"
+                        minlength="2"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-12 mb-3">
+                  <div class="row align-items-center">
+                    <label for="email" class="col-sm-3 col-form-label fw-bold">
+                      Email
+                    </label>
+                    <div class="col-sm-8">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                        title="Email must contain a valid format like archana@sriyan.com"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mobile -->
+                <div class="col-md-12 mb-3">
+                  <div class="row align-items-center">
+                    <label for="phone" class="col-sm-3 col-form-label fw-bold">
+                      Mobile
+                    </label>
+                    <div class="col-sm-8">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        pattern="^[6-9][0-9]{9}$"
+                        title="Please enter a valid 10-digit indian mobile number"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12 mb-3">
+                  <div class="row align-item-center">
+                    <label for="msg" class="col-sm-2 col-form-label fw-bold"
+                      >Message</label
+                    >
+                    <div class="col-sm-10">
+                      <textarea
+                        class="form-control"
+                        id="msg"
+                        name="msg"
+                        row="5"
+                        minlength="10"
+                        required
+                        title="Enter minimum 10 characters"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn px-5 py-2 rounded-pill">
+                    send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary-subtle text-light py-4 m-auto">
+      <!-- Copyright Text -->
+      <p class="text-secondary-dark text-center small mt-0">
+        &copy; 2026 Archana Vada. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Bootstrap CDN script link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>

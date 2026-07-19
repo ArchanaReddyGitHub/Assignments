@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bootstrap - Assignment5</title>
+    <!-- Bootstrap CDN style link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS style link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="fixed-top mb-5">
+    <!-- Navbar from Bootstrap without search element -->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle shadow">
+      <div class="container">
+        <a class="navbar-brand d-flex align-item-center" href="#">
+          <img
+            src="./resources/A.png"
+            class="logo me-4"
+            alt="logo"
+            style="width: 50px"
+          />
+          <span>Archana</span></a
+        >
+        <!-- Hamburger button  -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto me-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <!-- Projects Section -->
+    <!-- ===================== Projects Overview ===================== -->
+    <section id="projects-overview" class="py-5">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold display-6">Projects</h2>
+          
+        </div>
+
+        <!-- Overview Card -->
+        <!-- <div class="card shadow-lg border-0 rounded-4"> -->
+        <div class="card-body  fw-bold p-4 p-lg-5">
+          <p class="lh-lg fw-semibold">
+            A collection of Salesforce CRM and Full-Stack development projects
+            demonstrating my technical knowledge, problem-solving skills, and
+            software development practices.
+          </p><br/> <br/>
+          <h3 class="fw-bold mb-4 text-primary">Project Overview</h3>
+
+          <p class=" fw-semibold lh-lg">
+            My journey in software development has provided me with
+            opportunities to work on both
+            <strong>Salesforce CRM solutions</strong> and
+            <strong>Full-Stack Web Applications</strong>, where I have
+            contributed to designing, developing, customizing, and maintaining
+            business applications. Throughout this journey, I have collaborated
+            with stakeholders to understand business requirements, translate
+            them into technical solutions, and deliver applications that improve
+            productivity, automate business processes, and enhance user
+            experience.
+          </p>
+
+          <p class="lh-lg fw-semibold ">
+            In Salesforce development, I have worked with
+            <strong>Lightning Web Components (LWC)</strong>,
+            <strong>Apex Classes</strong>, <strong>Apex Triggers</strong>,
+            <strong>Salesforce Flows</strong>, <strong>SOQL</strong>,
+            <strong>Custom Objects</strong>, <strong>Validation Rules</strong>,
+            <strong>Reports & Dashboards</strong>, and other platform features
+            to build scalable CRM solutions. My work includes analyzing business
+            requirements, developing new functionalities, automating workflows,
+            performing testing, deploying enhancements, and providing
+            application support to ensure reliable and efficient business
+            operations.
+          </p>
+
+          <p class="lh-lg fw-semibold ">
+            Alongside Salesforce, I have developed responsive full-stack web
+            applications using <strong>HTML5</strong>, <strong>CSS3</strong>,
+            <strong>Bootstrap</strong>, <strong>JavaScript</strong>,
+            <strong>React.js</strong>, <strong>Node.js</strong>,
+            <strong>Express.js</strong>, and <strong>MySQL</strong>. My
+            responsibilities include designing user interfaces, building RESTful
+            APIs, integrating databases, implementing authentication and
+            authorization, performing CRUD operations, validating user inputs,
+            and optimizing application performance to deliver secure and
+            user-friendly applications.
+          </p>
+
+          <p class="lh-lg fw-semibold ">
+            Throughout the development process, I follow industry best practices
+            including requirement analysis, application design, clean coding
+            standards, debugging, testing, version control using Git, and Agile
+            development methodologies. I am passionate about learning new
+            technologies, solving business challenges, and building scalable
+            software solutions that deliver meaningful value to organizations.
+          </p>
+
+          <p class="lh-lg mb-4 fw-semibold ">
+            The projects presented below reflect my technical capabilities,
+            problem-solving approach, and commitment to developing reliable,
+            efficient, and user-focused software solutions across both
+            Salesforce and Full-Stack development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Cards Section -->
+    <section class="project-cards py-5">
+      <div class="container">
+        <div class="row g-4">
+
+            <!-- Project1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow rounded-4">
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Training Program Automation</h5>
+              <img src="./resources/hero-bg.png"  class="card-img-top";  alt="Training Program"/>
+              <p class="card-text fw-semibold ">
+                <strong>Description:</strong> Developed a Salesforce-based
+                Customer Relationship Management (CRM) solution to automate lead
+                management, sales tracking, and customer engagement processes.
+                Implemented Apex, Lightning Web Components (LWC), Salesforce
+                Flows, and SOQL to streamline business workflows, improve data
+                accuracy, and provide real-time insights through interactive
+                reports and dashboards. The solution enhanced team
+                collaboration, increased operational efficiency, and supported
+                better business decision-making. <br /><br />
+              </p>
+              <p class="fw-semibold ">
+                <strong>Key Achievement:</strong> Reduced manual sales
+                operations by 60% through workflow automation and improved lead
+                conversion tracking. <br /><br />
+              </p>
+                <div class="mt-auto">
+                    <a
+                    href="https://assignment1-html-archana.netlify.app/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >LiveDemo</a
+                    >
+                    <a
+                    href="https://github.com/ArchanaReddyGitHub/Assignments/tree/main/assignment1"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >GitHub</a
+                    >
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Priject2 -->
+         <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow rounded-4">
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Training Program Automation</h5>
+              <img
+              src="./resources/vendor.png"
+              class="card-img-top"
+              ;
+              alt="Training Program"
+            />
+              <p class="card-text fw-semibold ">
+                <strong>Description:</strong> Developed a Salesforce-based
+                    Vendor Onboarding Management System to streamline the
+                    registration and approval of staffing partners. Built
+                    Lightning Web Components (LWC) and Apex solutions to
+                    automate onboarding workflows, implement country-based
+                    validations, manage document uploads through Google Drive
+                    integration, and send automated email notifications. The
+                    solution improved data accuracy, standardized the onboarding
+                    process, and enhanced operational efficiency.  <br /><br />
+              </p>
+              <p class="fw-semibold ">
+                <strong>Key Achievement:</strong> Automated vendor
+                    onboarding with country-specific validations, Google Drive
+                    document management, finance approval notifications,
+                    agreement expiry reminders, and record locking to ensure
+                    data integrity. <br /><br />
+
+              </p>
+                <div class="mt-auto">
+                    <a
+                    href="https://assignment2-archana.netlify.app/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Live Demo</a
+                    >
+                     <a
+                    href="https://github.com/ArchanaReddyGitHub/Assignments/tree/main/assignment2"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Git Hub</a
+                    >
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Third Project -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow rounded-4">
+            
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-20">Employee Management System</h5>
+              <img
+              src="./resources/EmployeeManagementSystem.jpg"
+              class="card-img-top"
+              ;
+              alt="Training Program"
+            />
+              <p class="card-text fw-semibold ">
+                <strong>Description:</strong> Developed a responsive Employee Management System to automate employee administration, 
+                department management, attendance, and leave tracking. Built using React.js, Node.js, Express.js, and MySQL, 
+                the application provides secure user authentication, efficient CRUD operations, 
+                and a user-friendly interface for streamlined HR management. Designed responsive user interfaces using React.js, HTML5, CSS3, and Bootstrap. 
+                Implemented CRUD operations for employees, departments, attendance, and leave management. Added form validation, search, filtering, and pagination for better usability.
+                Tested, debugged, and optimized application performance. <br /><br />
+              </p>
+              <!-- Key Result -->
+              <p class="fw-semibold " > 
+                <strong>Key Achievement :</strong>
+                Improved employee record management by centralizing data,
+                reducing manual administrative tasks, and providing a secure,
+                responsive platform for HR operations.
+              </p>
+              
+                <div class="mt-auto">
+                    <a
+                    href="https://assignment3-archana.netlify.app/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >LiveDemo</a
+                    >
+
+                    <a
+                    href="https://github.com/ArchanaReddyGitHub/Assignments/tree/main/assignment3"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >GitHub</a
+                    >
+
+                </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary-subtle text-light py-4 m-auto">
+      <!-- Copyright Text -->
+      <p class="text-secondary-dark text-center small mt-0">
+        &copy; 2026 Archana Vada. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- Bootstrap CDN script link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>
